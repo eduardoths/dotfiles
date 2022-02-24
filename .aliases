@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+alias cat="bat"
+alias ls="exa --icons"

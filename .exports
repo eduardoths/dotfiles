@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+export EDITOR=nvim
+
+export LANG=en_US.UTF-8
+
+
+# Golang
+export GOPATH=$HOME/go
+export GOROOT=/opt/homebrew/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin

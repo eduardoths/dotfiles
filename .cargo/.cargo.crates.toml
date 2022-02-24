@@ -1,0 +1,7 @@
+[v1]
+"bat 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["bat"]
+"exa 0.10.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["exa"]
+"fd-find 8.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["fd"]
+"ripgrep 13.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
+"tokei 12.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["tokei"]
+"ytop 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["ytop"]
