@@ -1,4 +1,4 @@
--- general
+--lgeneral
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "dracula"
@@ -24,6 +24,8 @@ lvim.builtin.which_key.mappings["r"] = {
   "<cmd>Trouble document_diagnostics<cr>",
   "Diagnostics",
 }
+
+
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -85,7 +87,7 @@ lvim.plugins = {
           },
         },
         server = {
-          cmd_env = requested_server.get_default_options().cmd_env,
+          cmd_env = requested_server._default_options.cmd_env,
           on_attach = require("lvim.lsp").common_on_attach,
           on_init = require("lvim.lsp").common_on_init,
         },
