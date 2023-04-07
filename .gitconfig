@@ -46,10 +46,14 @@
 	default = current
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[url "git@github.com:OlaIsaac"]
-	insteadOf = https://github.com/OlaIsaac
+[init]
+	defaultBranch = main
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[url "git@github.com:eduardoths"]
+	insteadOf = https://github.com/eduardoths
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
