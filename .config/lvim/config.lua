@@ -1,7 +1,7 @@
 --general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedark"
+lvim.colorscheme = "dracula"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -63,5 +63,17 @@ lvim.plugins = {
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
+  },
+  {
+    "Mofiqul/dracula.nvim",
+  }
+}
+
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  {
+    name = "prettier",
+    args = { "--print-width", "100" },
+    filetypes = { "typescript", "typescriptreact" },
   },
 }
