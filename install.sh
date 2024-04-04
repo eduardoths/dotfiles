@@ -9,6 +9,11 @@ curl -sS https://starship.rs/install.sh | sh
 # install rust
 brew install rust
 
+# install rbenv
+brew install rbenv ruby-build
+rbenv install $(rbenv install -l | grep -v - | tail -1)
+rbenv global $(rbenv install -l | grep -v - | tail -1)
+
 # Install cargo apps
 Cargo install exa bat tokei ytop ripgrep fd-find
 
@@ -33,4 +38,5 @@ rm LICENSE.txt readme.md
 # Creates workspace
 mkdir ~/codes
 
-
+# Other installs
+brew install go docker
